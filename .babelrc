@@ -1,0 +1,24 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false,
+        "targets": {
+          "node": "current"
+        },
+        "debug": true
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-numeric-separator",
+    "@babel/plugin-proposal-function-bind",
+    "@babel/plugin-proposal-throw-expressions",
+    ["@babel/plugin-proposal-pipeline-operator", { "proposal": "minimal" }]
+  ],
+  "sourceMaps": "both",
+  "compact": true,
+  "highlightCode": true
+}
